@@ -2,7 +2,7 @@
 # Internship Task 3 (Final Task): University Hostel Management System
 
 ## Project Overview
-This project is a C++ based University Hostel Management System designed to efficiently track and manage hostel facilities, room capacities, and administrative data. It follows clean code principles and utilizes Object-Oriented Programming (OOP) to create a scalable architecture for a university campus environment.
+A robust C++ application designed to efficiently manage student hostel records, facility details, and room allocations. This project was developed as a final task for the ALFIDO TECH internship, focusing on Object-Oriented Programming (OOP) principles, standard template libraries (STL), and persistent file storage.
 
 ## Key Features
 - **Object-Oriented Design**: Utilizes inheritance to differentiate between hostel types while maintaining a shared base structure.
