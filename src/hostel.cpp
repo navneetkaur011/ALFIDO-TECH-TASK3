@@ -1,8 +1,9 @@
 #include "../include/Hostel.h"
 #include <iostream>
+using namespace std;
 
 void UniversityHostel::displayInfo() const {
-    std::cout << "\nHostel Name: " << hostelName << std::endl;
-    std::cout << "Facilities : " << facilities << std::endl;
-    std::cout << "Total Rooms: " << totalRooms << std::endl;
+    cout << "\nHostel Name: " << hostelName << endl;
+    cout << "Facilities : " << facilities << endl;
+    cout << "Total Rooms: " << totalRooms << endl;
 }
