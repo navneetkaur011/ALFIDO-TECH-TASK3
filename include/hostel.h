@@ -1,3 +1,4 @@
+// This file contains the class definition for the University Hostel management system.
 #ifndef HOSTEL_H
 #define HOSTEL_H
 
