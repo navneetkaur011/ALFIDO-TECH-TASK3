@@ -1,38 +1,36 @@
 # ALFIDO-TECH-TASK3
-# Internship Task 3 (Final Task): C++ Hostel Management System
+# Internship Task 3 (Final Task): University Hostel Management System
 
-Welcome to the repository for my third and final task of the C/C++ Programming Internship at **Alfido Tech**. 
+## Project Overview
+This project is a C++ based University Hostel Management System designed to efficiently track and manage hostel facilities, room capacities, and administrative data. It follows clean code principles and utilizes Object-Oriented Programming (OOP) to create a scalable architecture for a university campus environment.
 
-This project implements an enterprise-style, console-based **Hostel Management System** written in modern C++. By pivoting away from standard introductory projects, this system addresses a real-world utility scenario: managing student room allocations, maintaining room occupancy rules, and persisting records securely across sessions using flat-file storage.
+## Key Features
+- **Object-Oriented Design**: Utilizes inheritance to differentiate between hostel types while maintaining a shared base structure.
+- **Modern Memory Management**: Implements smart pointers (`std::unique_ptr`) to ensure efficient memory allocation and prevent leaks.
+- **Scalable Architecture**: Designed to easily accommodate 8–10+ hostels by extending the class hierarchy.
+- **Data Persistence**: Includes a structured data storage approach for future expansion into file-based database management.
 
----
+## Technical Stack
+- **Language**: C++17
+- **Build System**: Make
+- **Compiler**: g++
 
-## 🛠️ Key Architectural & OOP Pillars
+## Project Structure
+- `include/`: Contains the header file (`Hostel.h`) with class declarations.
+- `src/`: Contains implementation logic (`Hostel.cpp`) and the main execution entry point (`main.cpp`).
+- `data/`: Contains external storage (`hostel_db.txt`) for persistent data.
+- `Makefile`: Automates the compilation process for consistency across environments.
 
-This application demonstrates a strong command of modern Object-Oriented Programming (OOP) design patterns and C++ Standard Template Library (STL) integration:
-
-* **Encapsulation & Abstraction:** Sensitive properties (such as Room Numbers and Student IDs) are hidden under `private` and `protected` scopes, exposed safely only via public getters and state-changing setters.
-* **Inheritance:** A polymorphic base class `Person` is extended by the derived `Student` class, promoting clean code reuse and structural extensibility.
-* **Standard Template Library (STL):** Memory management is handled dynamically using `std::vector` rather than legacy raw pointer arrays, eliminating manual heap allocations and potential memory leaks.
-* **Robust File Persistence:** All records are dynamically written to and loaded from a flat-file database (`hostel_records.txt`), ensuring data is never lost when the console session terminates.
-* **Input Validation & Buffer Management:** Features strict input stream handling to prevent infinite loops, buffer overflows, or invalid system choices.
-
----
-
-## 📁 File Structure
-
-The project has been unified into a single, cohesive file for direct, compilation-friendly deployment:
-
-* **`main.cpp`**: Contains the full class definitions (`Person`, `Student`, `HostelManager`), system file storage routines, and the interactive command-line interface (CLI) menu.
-* **`hostel_records.txt`**: *(Auto-generated)* Acts as the local storage database for student and room metadata.
-
----
-
-## ⚙️ Compilation and Execution
-
-To run this application on your local machine, make sure you have a working C++ compiler (such as GCC/MinGW) installed.
-
-1. **Clone the repository:**
+## How to Compile and Run
+1. Ensure you have `g++` and `make` installed.
+2. Open your terminal in the project root directory: `Alfido tech task3`
+3. Compile the project:
    ```bash
-   git clone <your-repository-link>
-   cd "ALFIDO TECH TASK3"
+   make
+4. Execute the program:
+   ```bash
+   ./university_hostel
+## Troubleshooting
+- If you receive a 'make: command not found' error, ensure you have the GCC compiler (MinGW on Windows) installed and added to your system PATH. 
+- Alternatively, you can compile manually using:
+  `g++ -std=c++17 src/main.cpp src/Hostel.cpp -Iinclude -o university_hostel`

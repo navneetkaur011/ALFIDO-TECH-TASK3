@@ -1,0 +1,5 @@
+Hostel A,Boys,Wi-Fi Gym Laundry,100
+Hostel B,Girls,Wi-Fi Library Canteen,120
+Hostel C,Post-Grad,Private Study Rooms Wi-Fi,80
+Hostel D,General,Canteen Library,150
+Hostel E,International,Gym Canteen Wi-Fi,90
