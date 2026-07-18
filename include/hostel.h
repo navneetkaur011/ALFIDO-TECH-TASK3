@@ -4,13 +4,14 @@
 
 #include <string>
 #include <iostream>
+using namespace std;
 
 class Hostel {
 protected:
-    std::string hostelName;
-    std::string facilities;
+    string hostelName;
+    string facilities;
 public:
-    Hostel(std::string name, std::string fac) : hostelName(name), facilities(fac) {}
+    Hostel(string name, string fac) : hostelName(name), facilities(fac) {}
     virtual void displayInfo() const = 0; // Pure virtual function
 };
 
