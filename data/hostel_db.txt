@@ -1,3 +1,4 @@
+------Hostel records: Hostel No.,Status,Facilities,Rooms------
 Hostel A,Boys,Wi-Fi Gym Laundry,100
 Hostel B,Girls,Wi-Fi Library Canteen,120
 Hostel C,Post-Grad,Private Study Rooms Wi-Fi,80
