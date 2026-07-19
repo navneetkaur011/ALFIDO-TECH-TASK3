@@ -4,25 +4,29 @@
 
 #include <string>
 #include <iostream>
-using namespace std;
 
 class Hostel {
 protected:
-    string hostelName;
-    string facilities;
+    std::string hostelName;
+    std::string facilities;
 public:
-    Hostel(string name, string fac) : hostelName(name), facilities(fac) {}
-    virtual void displayInfo() const = 0; // Pure virtual function
+    Hostel(std::string name, std::string fac) : hostelName(name), facilities(fac) {}
+    virtual ~Hostel() = default;
+    virtual void displayInfo() const = 0;
+    
+    std::string getName() const { return hostelName; }
+    std::string getFacilities() const { return facilities; }
 };
 
 class UniversityHostel : public Hostel {
 private:
     int totalRooms;
 public:
-    UniversityHostel(std::string name, std::string fac, int rooms) 
+    UniversityHostel(std::string name, std::string fac, int rooms)
         : Hostel(name, fac), totalRooms(rooms) {}
-    
+
     void displayInfo() const override;
+    int getRooms() const { return totalRooms; }
 };
 
-#endif
+#endif 
